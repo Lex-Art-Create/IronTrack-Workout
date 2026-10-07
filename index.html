@@ -28,7 +28,8 @@ main{max-width:1180px;margin:0 auto;padding:18px 14px}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.stat{background:var(--panel2);padding:12px;border-radius:14px}.stat b{display:block;font-size:22px}.stat small{color:var(--muted)}
 .tabs{display:flex;gap:8px;overflow:auto;padding:4px 0 12px;scrollbar-width:none}.tabs button{white-space:nowrap;background:var(--panel);color:var(--muted);border:1px solid var(--line);padding:10px 14px;border-radius:999px}.tabs button.active{color:#fff;background:var(--accent);border-color:var(--accent)}
 .daygrid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:16px}.day{padding:12px;background:var(--panel);border:1px solid var(--line);border-radius:14px;text-align:left}.day.active{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent) inset}.day strong{display:block}.day small{color:var(--muted);display:block;margin-top:4px}
-.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:12px 0}.sectionhead h2{margin:0;font-size:20px}.progress{height:8px;background:#252b35;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;background:var(--good);width:0}.appcheck{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;margin:14px 0 4px;background:var(--panel2);border:1px solid var(--line);border-radius:14px}.appcheck.done{border-color:var(--good);box-shadow:0 0 0 1px var(--good) inset}.appcheck .appcopy{min-width:0}.appcheck h3{margin:0 0 3px;font-size:16px}.appcheck p{margin:0;color:var(--muted);font-size:12px;line-height:1.4}.appbtn{min-width:190px}.appbadge{font-size:12px;font-weight:800;color:var(--good)}
+.sectionhead{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:12px 0}.sectionhead h2{margin:0;font-size:20px}.progress{height:8px;background:#252b35;border-radius:99px;overflow:hidden}.progress i{display:block;height:100%;background:var(--good);width:0}.weekquick{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:12px}.weekquick button{padding:7px 4px;border-radius:10px;background:var(--panel);border:1px solid var(--line);color:var(--muted);font-size:10px;font-weight:800}.weekquick button.active{background:var(--accent);border-color:var(--accent);color:#fff}.weekquick button.locked{opacity:.6}.completebox{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:10px 0;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--panel2)}.completebox.done{border-color:var(--good);box-shadow:0 0 0 1px var(--good) inset}.completebox p{margin:3px 0 0;color:var(--muted);font-size:11px}.completebtn{min-width:190px}
+.appcheck{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;margin:14px 0 4px;background:var(--panel2);border:1px solid var(--line);border-radius:14px}.appcheck.done{border-color:var(--good);box-shadow:0 0 0 1px var(--good) inset}.appcheck .appcopy{min-width:0}.appcheck h3{margin:0 0 3px;font-size:16px}.appcheck p{margin:0;color:var(--muted);font-size:12px;line-height:1.4}.appbtn{min-width:190px}.appbadge{font-size:12px;font-weight:800;color:var(--good)}
 
 .media{margin-top:12px;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0b0e14}.media img{display:block;width:100%;max-height:260px;object-fit:cover}.mediaframe{width:100%;aspect-ratio:16/9;border:0;display:block}.mediaactions{display:flex;gap:8px;flex-wrap:wrap;padding:9px}.mediaactions button,.mediaactions a{flex:1;min-width:120px;text-align:center;text-decoration:none;padding:9px 10px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);color:#fff;font-weight:800;font-size:12px}.muscleinfo{display:none;margin:10px 0 14px;padding:13px;background:var(--panel2);border:1px solid var(--line);border-radius:14px}.muscleinfo.show{display:block}.musclegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.musclegroup{padding:10px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}.musclegroup b{display:block;margin-bottom:4px}.chips{display:flex;gap:5px;flex-wrap:wrap}.chip{font-size:11px;color:#fff;background:#222936;border:1px solid var(--line);padding:4px 7px;border-radius:999px}.exactions{display:flex;gap:7px;margin-top:8px;flex-wrap:wrap}.exinfo{padding:7px 9px!important;font-size:11px!important;width:auto!important}.startnote{padding:10px 12px;border:1px dashed var(--accent);border-radius:12px;background:rgba(79,140,255,.08);margin:10px 0;color:var(--muted);font-size:12px}.calfmark{color:var(--warn);font-weight:800}
 .exercise{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:14px;margin:10px 0}.exercise.done{border-color:rgba(53,208,127,.6)}.exhead{display:flex;gap:10px;align-items:flex-start}.num{width:32px;height:32px;border-radius:10px;background:var(--panel2);display:grid;place-items:center;font-weight:900;flex:0 0 auto}.exname{font-weight:850}.meta{color:var(--muted);font-size:13px;margin-top:3px}.check{margin-left:auto;width:34px;height:34px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);color:var(--muted)}.done .check{background:var(--good);color:#06120b;border-color:var(--good)}
@@ -128,149 +129,20 @@ button,input,select{min-height:44px}
 </head>
 <body>
 <div class="app">
-<header><div class="top">
-  <div class="brand">IRON<span>TRACK</span>
-  </div><div class="actions">
-    <button class="ghost" id="exportBtn">Export</button>
-    <button class="ghost" id="importBtn">Import</button>
-    <input id="fileInput" type="file" accept=".json" hidden>
-  </div>
-</div>
-</header>
+<header><div class="top"><div class="brand">IRON<span>TRACK</span></div><div class="actions"><button class="ghost" id="exportBtn">Export</button><button class="ghost" id="importBtn">Import</button><input id="fileInput" type="file" accept=".json" hidden></div></div></header>
 <main>
 <section class="view active" id="workoutView">
-<div class="hero">
-  <div class="card todaycard">
-    <h1 id="todayHero">Today.</h1>
-    <p id="todayIntro">Only today is editable. Previous days are automatically archived and locked.</p>
-    <div class="todayactions"><button class="primary" id="expandToday">Open Today’s Workout</button>
-      <button class="ghost" id="shiftToday">Shift Today</button>
-    </div>
-  </div>
-  <div class="card">
-    <div class="stats">
-      <div class="stat">
-        <b id="statDone">0</b>
-        <small>Exercises done</small>
-      </div>
-      <div class="stat">
-        <b id="statSets">0</b>
-        <small>Sets logged</small>
-      </div><div class="stat">
-        <b id="statPct">0%</b>
-        <small>Today complete</small>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="card" id="todayWorkoutCard">
-  <div class="sectionhead">
-    <div>
-      <h2 id="dayTitle"></h2>
-      <div class="note" id="daySubtitle">
-  </div>
-</div>
-<button class="ghost" id="restSettings">Rest: 
-  <span id="restLabel">60s</span>
-</button>
-</div>
-<button class="ghost" id="workoutInfoBtn" style="margin:2px 0 10px">Info</button>
-<div class="muscleinfo" id="workoutInfo"></div>
-<div class="startnote" id="videoNote">Tap <b>Start Workout</b> to open the first workout.
-</div>
-<div class="progress">
-  <i id="dayProgress">  
-  </i>
-</div>
-  <div id="exerciseList"></div>
-</div>
+<div class="hero"><div class="card todaycard"><h1 id="todayHero">Today.</h1><p id="todayIntro">Choose a day below to open its workout. Past days are locked; today and future workouts remain accessible.</p><div class="todayactions"><button class="primary" id="expandToday">Start Workout</button><button class="ghost" id="shiftToday">Shift Today</button></div><div class="weekquick" id="weekQuick"></div></div><div class="card"><div class="stats"><div class="stat"><b id="statDone">0</b><small>Exercises done</small></div><div class="stat"><b id="statSets">0</b><small>Sets logged</small></div><div class="stat"><b id="statPct">0%</b><small>Today complete</small></div></div></div></div>
+<div class="card" id="todayWorkoutCard"><div class="sectionhead"><div><h2 id="dayTitle"></h2><div class="note" id="daySubtitle"></div></div><button class="ghost" id="restSettings">Rest: <span id="restLabel">60s</span></button></div><button class="ghost" id="workoutInfoBtn" style="margin:2px 0 10px">Info</button><div class="muscleinfo" id="workoutInfo"></div><div class="startnote" id="videoNote">Tap <b>Start Workout</b> to open the first exercise video. Each exercise also has its own form video.</div><div class="progress"><i id="dayProgress"></i></div><div id="workoutCompleteBox"></div><div id="exerciseList"></div></div>
 </section>
-<section class="view" id="calendarView">
-  <div class="sectionhead">
-    <div>
-      <h2>Calendar & History</h2>
-      <div class="note">Tap a day to see its workout and progress. Locked days cannot be reopened or edited.</div>
-    </div>
-  </div>
-  <div class="card">
-    <div id="calendarTitle">
-    </div>
-    <div class="calendar" id="calendar"></div>
-    <div class="calendarlegend">
-      <span>● 
-      <b>Today</b>
-    </span>
-    <span>✓ Completed</span>
-    <span>🔒 Archived / locked</span>
-    <span>→ Shiftable future workout</span>
-  </div>
-</div>
-<div class="card" id="calendarDetail" style="margin-top:14px"></div>
-</section>
-<section class="view" id="analysisView">
-  <div class="sectionhead">
-    <h2>Analysis & Progress</h2>
-  </div>
-  <div class="analysisgrid">
-    <div class="card">
-      <h3>This week</h3>
-      <div id="analysisBars"></div>
-    </div>
-    <div class="card">
-      <h3>Past weeks</h3>
-      <div id="history">
-      </div>
-    </div>
-  </div>
-</section>
-<section class="view" id="settingsView">
-  <div class="card">
-    <h2>IRONTRACK Settings</h2>
-    <button class="primary" id="installBtn" style="width:100%;margin:8px 0;display:none">Install IRONTRACK</button>
-    <p class="note">Rest time applies automatically after every completed set. Swipe right on the set action to advance. The last set completes the exercise automatically.</p>
-    <div class="presets" id="settingsPresets"></div>
-    <label class="note">Custom rest (seconds)
-      <input id="customRest" type="number" min="5" max="600" style="display:block;width:100%;margin-top:5px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;color:#fff;padding:11px"></label>
-      <button class="primary" style="margin-top:10px;width:100%" id="saveRest">Save rest time</button>
-      <button class="ghost" style="margin-top:10px;width:100%" id="manualArchive">Archive today now</button>
-    </div>
-  </section>
+<section class="view" id="calendarView"><div class="sectionhead"><div><h2>Calendar & History</h2><div class="note">Tap a day to see its workout and progress. Locked days cannot be reopened or edited.</div></div></div><div class="card"><div id="calendarTitle"></div><div class="calendar" id="calendar"></div><div class="calendarlegend"><span>● <b>Today</b></span><span>✓ Completed</span><span>🔒 Archived / locked</span><span>→ Shiftable future workout</span></div></div><div class="card" id="calendarDetail" style="margin-top:14px"></div></section>
+<section class="view" id="analysisView"><div class="sectionhead"><h2>Analysis & Progress</h2></div><div class="analysisgrid"><div class="card"><h3>This week</h3><div id="analysisBars"></div></div><div class="card"><h3>Past weeks</h3><div id="history"></div></div></div></section>
+<section class="view" id="settingsView"><div class="card"><h2>IRONTRACK Settings</h2><button class="primary" id="installBtn" style="width:100%;margin:8px 0;display:none">Install IRONTRACK</button><p class="note">Rest time applies automatically after every completed set. Swipe right on the set action to advance. The last set completes the exercise automatically.</p><div class="presets" id="settingsPresets"></div><label class="note">Custom rest (seconds)<input id="customRest" type="number" min="5" max="600" style="display:block;width:100%;margin-top:5px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;color:#fff;padding:11px"></label><button class="primary" style="margin-top:10px;width:100%" id="saveRest">Save rest time</button><button class="ghost" style="margin-top:10px;width:100%" id="manualArchive">Archive today now</button></div></section>
 </main>
-<footer><div class="nav">
-  <button class="active" data-nav="workoutView">🏋️
-    <small>Today</small>
-  </button>
-  <button data-nav="calendarView">🗓️
-    <small>Calendar</small>
-  </button>
-  <button data-nav="analysisView">📊
-    <small>Analysis</small>
-  </button>
-  <button data-nav="settingsView">⚙️
-    <small>Settings</small>
-  </button>
-</div>
-</footer>
+<footer><div class="nav"><button class="active" data-nav="workoutView">🏋️<small>Today</small></button><button data-nav="calendarView">🗓️<small>Calendar</small></button><button data-nav="analysisView">📊<small>Analysis</small></button><button data-nav="settingsView">⚙️<small>Settings</small></button></div></footer>
 </div>
 
-<div class="timer" id="timer">
-  <div class="timerbox">
-    <h2>REST</h2>
-    <div class="timerbig" id="timerValue">60</div>
-    <div class="presets">
-      <button data-t="30">30s</button>
-      <button data-t="45">45s</button>
-      <button data-t="60">60s</button>
-      <button data-t="90">90s</button>
-      <button data-t="120">120s</button>
-    </div>
-    <div class="timercontrols">
-      <button class="ghost" id="skipTimer">Skip
-      </button><button class="primary" id="pauseTimer">Pause</button>
-    </div>
-    <div class="swipehint">Swipe right on a set to advance. Swipe after the final set completes the exercise automatically.</div>
-  </div>
-</div>
+<div class="timer" id="timer"><div class="timerbox"><h2>REST</h2><div class="timerbig" id="timerValue">60</div><div class="presets"><button data-t="30">30s</button><button data-t="45">45s</button><button data-t="60">60s</button><button data-t="90">90s</button><button data-t="120">120s</button></div><div class="timercontrols"><button class="ghost" id="skipTimer">Skip</button><button class="primary" id="pauseTimer">Pause</button></div><div class="swipehint">Swipe right on a set to advance. Swipe after the final set completes the exercise automatically.</div></div></div>
 <div class="toast" id="toast"></div>
 
 <script>
@@ -403,7 +275,7 @@ function loadState(){
 }
 function saveState(){localStorage.setItem(KEY,JSON.stringify(state))}
 function dayTemplate(k){return WORKOUTS[k]}
-function entry(date){if(!state.schedule[date]){const d=dayKeyForDate(date);state.schedule[date]={sourceDay:d,progress:{},appDone:false,locked:false,createdAt:new Date().toISOString()}}return state.schedule[date]}
+function entry(date){if(!state.schedule[date]){const d=dayKeyForDate(date);state.schedule[date]={sourceDay:d,progress:{},appDone:false,workoutDone:false,locked:false,createdAt:new Date().toISOString()}}return state.schedule[date]}
 function id(g,e){return g+'_'+e}
 function ensure(date,g,e,sets){const en=entry(date);const k=id(g,e);en.progress[k]??={done:false,sets:Array.from({length:sets},()=>({reps:'',weight:'',rir:'',completed:false}))};return en.progress[k]}
 function flatDay(source){let a=[];WORKOUTS[source].groups.forEach(([g,es])=>es.forEach((e,i)=>a.push({g,name:e[0],sets:e[1],reps:e[2],idx:i})));return a}
@@ -419,26 +291,28 @@ function rollover(st,saveIt=true){
   if(saveIt)localStorage.setItem(KEY,JSON.stringify(st));
   return st
 }
-function entryForState(st,date){if(!st.schedule[date]){st.schedule[date]={sourceDay:dayKeyForDate(date),progress:{},appDone:false,locked:false,createdAt:new Date().toISOString()}}return st.schedule[date]}
+function entryForState(st,date){if(!st.schedule[date]){st.schedule[date]={sourceDay:dayKeyForDate(date),progress:{},appDone:false,workoutDone:false,locked:false,createdAt:new Date().toISOString()}}return st.schedule[date]}
 function archiveWeekSummary(st,weekStart){if(st.history.some(x=>x.week===weekStart))return;const dates=Array.from({length:7},(_,i)=>addDays(weekStart,i));const rows=dates.map(d=>st.dailyHistory.find(x=>x.date===d)).filter(Boolean);if(!rows.length)return;const total=rows.reduce((n,x)=>n+x.total,0),done=rows.reduce((n,x)=>n+x.done,0),apps=rows.reduce((n,x)=>n+(x.appDone?1:0),0);st.history.push({week:weekStart,completed:done,total,percent:Math.round(done/Math.max(1,total)*100),appCompleted:apps,appTotal:rows.filter(x=>APPDAYS.includes(x.sourceDay)).length||0});}
-function archiveDate(st,date){const en=entryForState(st,date);if(en.locked)return;const src=en.sourceDay;let total=0,done=0,sets=0;flatDay(src).forEach(x=>{total++;const p=en.progress[id(x.g,x.idx)];if(p?.done)done++;if(p?.sets)sets+=p.sets.filter(z=>z.completed).length});st.dailyHistory.push({date,sourceDay:src,title:WORKOUTS[src].title,sub:WORKOUTS[src].sub,progress:JSON.parse(JSON.stringify(en.progress||{})),appDone:!!en.appDone,total,done,percent:Math.round(done/Math.max(1,total)*100),sets,locked:true});en.locked=true;if(dayKeyForDate(date)==='Sun')archiveWeekSummary(st,monday(date))}
-function todayEntry(){return entry(state.currentDate)}
+function archiveDate(st,date){const en=entryForState(st,date);if(en.locked)return;const src=en.sourceDay;let total=0,done=0,sets=0;flatDay(src).forEach(x=>{total++;const p=en.progress[id(x.g,x.idx)];if(p?.done)done++;if(p?.sets)sets+=p.sets.filter(z=>z.completed).length});st.dailyHistory.push({date,sourceDay:src,title:WORKOUTS[src].title,sub:WORKOUTS[src].sub,progress:JSON.parse(JSON.stringify(en.progress||{})),appDone:!!en.appDone,workoutDone:!!en.workoutDone,total,done,percent:Math.round(done/Math.max(1,total)*100),sets,locked:true});en.locked=true;if(dayKeyForDate(date)==='Sun')archiveWeekSummary(st,monday(date))}
+let selectedDate=state.currentDate;
+function todayEntry(){return entry(selectedDate)}
+function selectWorkout(date){selectedDate=date;renderWorkout();document.getElementById('todayWorkoutCard').scrollIntoView({behavior:'smooth',block:'start'})}
 function isToday(d){return d===state.currentDate}
 function isFuture(d){return d>state.currentDate}
 function renderCalendar(){
   const m=calendarCursor;document.getElementById('calendarTitle').innerHTML=`<div class="sectionhead"><div><h3>${fmtDate(m,{month:'long',year:'numeric'})}</h3><div class="note">${fmtDate(m)} – ${fmtDate(addDays(m,6))}</div></div><div class="actions"><button class="ghost" onclick="changeCalendar(-1)">← Previous</button><button class="ghost" onclick="changeCalendar(1)">Next →</button></div></div>`;
   let html='';DAYS.forEach(([,n])=>html+=`<div class="calhead">${n}</div>`);
-  weekDates(state.currentDate).forEach(d=>{const hist=state.dailyHistory.find(x=>x.date===d);const en=state.schedule[d]||{sourceDay:hist?.sourceDay||dayKeyForDate(d),progress:hist?.progress||{},appDone:!!hist?.appDone,locked:d<state.currentDate};const src=en.sourceDay, locked=!!en.locked;const p=progressFor(d);const label=locked?'🔒 Archived':p.done+'/'+p.total+' exercises';html+=`<button class="calday ${isToday(d)?'today':''} ${locked?'locked':'future'}" onclick="openCalendarDay('${d}')"><span class="date">${dateObj(d).getDate()}</span><span class="state">${WORKOUTS[src].title.split('—')[0]} · ${WORKOUTS[src].title.split('—')[1]?.trim().split(' ')[0]||''}<br>${p.percent===100?'<span class="tick">✓ Completed</span>':label}</span></button>`});
+  weekDates(state.currentDate).forEach(d=>{const hist=state.dailyHistory.find(x=>x.date===d);const en=state.schedule[d]||{sourceDay:hist?.sourceDay||dayKeyForDate(d),progress:hist?.progress||{},appDone:!!hist?.appDone,workoutDone:!!hist?.workoutDone,locked:d<state.currentDate};const src=en.sourceDay, locked=!!en.locked;const p=progressFor(d);const label=locked?'🔒 Archived':p.done+'/'+p.total+' exercises';html+=`<button class="calday ${isToday(d)?'today':''} ${locked?'locked':'future'}" onclick="openCalendarDay('${d}')"><span class="date">${dateObj(d).getDate()}</span><span class="state">${WORKOUTS[src].title.split('—')[0]} · ${WORKOUTS[src].title.split('—')[1]?.trim().split(' ')[0]||''}<br>${p.percent===100?'<span class="tick">✓ Completed</span>':label}</span></button>`});
   document.getElementById('calendar').innerHTML=html;
 }
-function progressFor(date){const hist=state.dailyHistory.find(x=>x.date===date);const en=state.schedule[date]||{sourceDay:hist?.sourceDay||dayKeyForDate(date),progress:hist?.progress||{},appDone:!!hist?.appDone,locked:date<state.currentDate};const src=en.sourceDay;let total=0,done=0;flatDay(src).forEach(x=>{total++;if(en.progress[id(x.g,x.idx)]?.done)done++});return {total,done,percent:Math.round(done/Math.max(1,total)*100)}}
+function progressFor(date){const hist=state.dailyHistory.find(x=>x.date===date);const en=state.schedule[date]||{sourceDay:hist?.sourceDay||dayKeyForDate(date),progress:hist?.progress||{},appDone:!!hist?.appDone,workoutDone:!!hist?.workoutDone,locked:date<state.currentDate};const src=en.sourceDay;let total=0,done=0;flatDay(src).forEach(x=>{total++;if(en.progress[id(x.g,x.idx)]?.done)done++});return {total,done,percent:Math.round(done/Math.max(1,total)*100)}}
 function changeCalendar(n){calendarCursor=addDays(calendarCursor,n*7);renderCalendar()}
 function showArchivedDetails(date){openCalendarDay(date)}
 function openCalendarDay(date){
-  const hist=state.dailyHistory.find(x=>x.date===date);const en=state.schedule[date]||{sourceDay:hist?.sourceDay||dayKeyForDate(date),progress:hist?.progress||{},appDone:!!hist?.appDone,locked:date<state.currentDate};const src=en.sourceDay,p=progressFor(date);
+  const hist=state.dailyHistory.find(x=>x.date===date);const en=state.schedule[date]||{sourceDay:hist?.sourceDay||dayKeyForDate(date),progress:hist?.progress||{},appDone:!!hist?.appDone,workoutDone:!!hist?.workoutDone,locked:date<state.currentDate};const src=en.sourceDay,p=progressFor(date);
   let lock=en.locked, h=state.dailyHistory.find(x=>x.date===date);
   let html=`<div class="sectionhead"><div><h3>${fmtDate(date,{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</h3><div class="note">${WORKOUTS[src].title}</div></div>${lock?'<span class="appbadge">🔒 Archived</span>':''}</div>`;
-  html+=`<div class="stats"><div class="stat"><b>${p.done}/${p.total}</b><small>Exercises</small></div><div class="stat"><b>${p.percent}%</b><small>Completion</small></div><div class="stat"><b>${en.appDone?'✓':'—'}</b><small>App workout</small></div></div>`;
+  html+=`<div class="stats"><div class="stat"><b>${p.done}/${p.total}</b><small>Exercises</small></div><div class="stat"><b>${p.percent}%</b><small>Completion</small></div><div class="stat"><b>${en.appDone?'✓':'—'}</b><small>App workout</small></div><div class="stat"><b>${en.workoutDone?'✓':'—'}</b><small>Workout</small></div></div>`;
   if(lock){html+=`<div class="lockedbanner">This workout is archived. It is read-only and cannot be reopened or edited.</div>`;if(h)html+=`<div class="note">Logged sets: ${h.sets||0}. Archived progress is preserved in this calendar record.</div>`}
   else if(isFuture(date)){html+=shiftControls(date)}
   else html+=shiftControls(date);
@@ -447,18 +321,20 @@ function openCalendarDay(date){
 function shiftControls(date){const options=weekDates(state.currentDate).filter(d=>d>=state.currentDate && d!==date);if(!options.length)return '';return `<div class="sectionhead"><h3>Shift workout</h3></div><div class="note">Move this scheduled workout to another active/future day. If that day already has a workout, the two workouts will swap.</div><div class="shiftbox"><select id="shiftTarget">${options.map(d=>`<option value="${d}">${fmtDate(d,{weekday:'short',month:'short',day:'numeric'})} — ${WORKOUTS[entry(d).sourceDay].title.split('—')[0]}</option>`).join('')}</select><button class="primary" onclick="shiftWorkout('${date}')">Shift</button></div>`}
 function shiftWorkout(date){if(entry(date).locked){toast('Archived workouts cannot be shifted');return}const sel=document.getElementById('shiftTarget');if(!sel)return;const target=sel.value;if(!target||entry(target).locked){toast('Choose an active/future day');return}const a=entry(date),b=entry(target);[a.sourceDay,b.sourceDay]=[b.sourceDay,a.sourceDay];[a.progress,b.progress]=[b.progress,a.progress];[a.appDone,b.appDone]=[b.appDone,a.appDone];saveState();render();openCalendarDay(date);toast('Workout shifted ✓')}
 function renderWorkout(){
-  const date=state.currentDate,en=todayEntry(),w=WORKOUTS[en.sourceDay];
-  document.getElementById('todayHero').textContent='Today — '+fmtDate(date,{weekday:'long',month:'short',day:'numeric'});
-  document.getElementById('todayIntro').textContent='Only today is editable. At midnight, today is archived automatically and locked.';
+  const date=selectedDate,en=todayEntry(),w=WORKOUTS[en.sourceDay];
+  document.getElementById('todayHero').textContent=(date===state.currentDate?'Today — ':'Workout — ')+fmtDate(date,{weekday:'long',month:'short',day:'numeric'});
+  document.getElementById('todayIntro').textContent=en.locked?'This workout is archived and read-only. You can still view all exercises and progress.':(date===state.currentDate?'Today is editable.':'Future workout — open it now to prepare or log it.');
   document.getElementById('dayTitle').textContent=w.title;
   document.getElementById('daySubtitle').textContent=w.sub;
   document.getElementById('restLabel').textContent=state.rest+'s';
   const infoGroups=w.groups.map(([g,es])=>`<div class="musclegroup"><b>${g}</b><div class="chips">${[...new Set(es.flatMap(e=>(exInfo(e[0]).primary||[])))].map(m=>`<span class="chip">${m}</span>`).join('')}</div></div>`).join('');
   document.getElementById('workoutInfo').innerHTML=`<div class="note" style="margin:0 0 8px">Primary and supporting muscle groups trained across this workout.</div><div class="musclegrid">${infoGroups}</div>`;
+  document.getElementById('weekQuick').innerHTML=weekDates(state.currentDate).map((d,i)=>{const enDay=entry(d);return `<button class="${d===selectedDate?'active ':''}${enDay.locked?'locked':''}" onclick="selectWorkout('${d}')">${DAYS[i][1].slice(0,3)}<br>${enDay.locked?'🔒':d===state.currentDate?'TODAY':'OPEN'}</button>`}).join('');
   const first=w.groups[0]?.[1]?.[0]?.[0]||'';
   document.getElementById('videoNote').innerHTML=en.locked?'🔒 This workout is archived. Form resources remain available for reference.':'Tap <b>Start Workout</b> above to open the first exercise video. Each exercise also has its own form video.';
   let total=0,done=0,html='';
   if(APPDAYS.includes(en.sourceDay)) html+=`<div class="appcheck ${en.appDone?'done':''}"><div class="appcopy"><h3>App Workout</h3><p>${en.appDone?'App workout recorded as complete.':'Complete your separate app workout, then mark it here.'}</p></div><button class="primary appbtn" ${en.locked?'disabled':''} onclick="toggleAppDone()">${en.appDone?'✓ App Workout Completed':'Mark App Workout Completed'}</button></div>`;
+  html+=`<div class="completebox ${en.workoutDone?'done':''}"><div><b>${en.workoutDone?'✓ Workout Completed':'Workout Completion'}</b><p>${en.workoutDone?'This full session is recorded as complete.':'Finished the whole session? Mark the workout completed here.'}</p></div><button class="primary completebtn" ${en.locked?'disabled':''} onclick="toggleWorkoutDone()">${en.workoutDone?'✓ Completed — Undo':'Mark Workout Completed'}</button></div>`;
   w.groups.forEach(([g,exs])=>{html+=`<div class="sectionhead"><h3>${g}${g==='Calves'?' <span class="calfmark">• Calves</span>':''}</h3></div>`;exs.forEach((e,ei)=>{
     const x=ensure(date,g,ei,e[1]); total++; if(x.done)done++; const meta=exInfo(e[0]);
     const video=meta.video?`<div class="media" id="media-${g.replace(/\W/g,'')}-${ei}"><img src="${meta.image||('https://i.ytimg.com/vi/'+meta.video+'/hqdefault.jpg')}" alt="${e[0]} form guide"><div class="mediaactions"><button type="button" onclick="playExerciseVideo('${g}',${ei})">▶ Watch / Play</button><a href="${videoUrl(e[0])}" target="_blank" rel="noopener">More videos</a></div></div>`:`<div class="media" id="media-${g.replace(/\W/g,'')}-${ei}"><img src="${meta.image||''}" alt="${e[0]} form guide" onerror="this.style.display='none'"><div class="mediaactions"><button type="button" onclick="playExerciseVideo('${g}',${ei})">▶ Find / Play Video</button><a href="${videoUrl(e[0])}" target="_blank" rel="noopener">More videos</a></div></div>`;
@@ -477,10 +353,11 @@ function playExerciseVideo(g,ei){const en=todayEntry(),w=WORKOUTS[en.sourceDay],
 }
 function startWorkout(){const first=WORKOUTS[todayEntry().sourceDay].groups[0]?.[1]?.[0];document.getElementById('todayWorkoutCard').scrollIntoView({behavior:'smooth',block:'start'});if(first){setTimeout(()=>playExerciseVideo(WORKOUTS[todayEntry().sourceDay].groups[0][0],0),250)}}
 
-function toggleDone(g,ei,sets){const en=todayEntry();if(en.locked){toast('This workout is archived and locked');return}let x=ensure(state.currentDate,g,ei,sets);x.done=!x.done;x.sets.forEach(s=>{if(x.done)s.completed=true});saveState();renderWorkout();renderCalendar()}
+function toggleDone(g,ei,sets){const en=todayEntry();if(en.locked){toast('This workout is archived and locked');return}let x=ensure(selectedDate,g,ei,sets);x.done=!x.done;x.sets.forEach(s=>{if(x.done)s.completed=true});saveState();renderWorkout();renderCalendar()}
+function toggleWorkoutDone(){const en=todayEntry();if(en.locked){toast('Archived workouts cannot be changed');return}en.workoutDone=!en.workoutDone;saveState();renderWorkout();renderCalendar();toast(en.workoutDone?'Workout marked complete ✓':'Workout completion undone')}
 function toggleAppDone(){const en=todayEntry();if(en.locked){toast('This workout is archived and locked');return}en.appDone=!en.appDone;saveState();renderWorkout();renderCalendar();toast(en.appDone?'App workout marked complete ✓':'App workout unmarked')}
 let timerInt=null,tLeft=0;function startTimer(sec){clearInterval(timerInt);tLeft=sec;document.getElementById('timer').classList.add('show');document.getElementById('pauseTimer').textContent='Pause';updateTimer();timerInt=setInterval(()=>{if(tLeft>0){tLeft--;updateTimer()}else{clearInterval(timerInt);navigator.vibrate?.([200,100,200]);document.getElementById('timer').classList.remove('show');toast('Rest complete — next set')}},1000)}function updateTimer(){document.getElementById('timerValue').textContent=tLeft}
-function advanceSet(g,ei,si,totalSets){const en=todayEntry();if(en.locked){toast('This workout is archived and locked');return}const w=WORKOUTS[en.sourceDay],x=ensure(state.currentDate,g,ei,totalSets);x.sets[si].completed=true;if(si===totalSets-1){x.done=true;saveState();renderWorkout();renderCalendar();toast('Exercise completed ✓');return}saveState();renderWorkout();startTimer(state.rest)}
+function advanceSet(g,ei,si,totalSets){const en=todayEntry();if(en.locked){toast('This workout is archived and locked');return}const w=WORKOUTS[en.sourceDay],x=ensure(selectedDate,g,ei,totalSets);x.sets[si].completed=true;if(si===totalSets-1){x.done=true;saveState();renderWorkout();renderCalendar();toast('Exercise completed ✓');return}saveState();renderWorkout();startTimer(state.rest)}
 function renderAnalysis(){const currentWeek=weekDates(state.currentDate);document.getElementById('history').innerHTML=state.history.length?state.history.slice().reverse().map(x=>`<div class="historyitem archivecard"><b>${x.week||x.date}</b><div class="note">${x.completed}/${x.total} exercises · ${x.percent}%${x.appTotal?` · ${x.appCompleted}/${x.appTotal} app workouts`:''}</div></div>`).join(''):'<p class="note">No archived weeks yet.</p>';document.getElementById('analysisBars').innerHTML=currentWeek.map(d=>{const e=entry(d),p=progressFor(d);return `<div class="bar"><div class="barrow"><span>${fmtDate(d,{weekday:'short',month:'short',day:'numeric'})}</span><b>${p.percent}%</b></div><div class="barbg"><i style="width:${p.percent}%"></i></div><div class="note">${e.locked?'🔒 Archived':'Active'} · ${WORKOUTS[e.sourceDay].title.split('—')[1]?.trim()||''}</div></div>`}).join('')}
 function openArchivedDetails(date){openCalendarDay(date)}
 function archiveTodayNow(){const today=state.currentDate;archiveDate(state,today);saveState();toast('Today archived and locked.');renderCalendar();renderWorkout()}
